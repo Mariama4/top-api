@@ -1,5 +1,13 @@
 import { Type } from 'class-transformer';
-import { IsArray, IsEnum, IsNumber, IsOptional, IsString, ValidateNested } from 'class-validator';
+import {
+	IsArray,
+	IsDate,
+	IsEnum,
+	IsNumber,
+	IsOptional,
+	IsString,
+	ValidateNested,
+} from 'class-validator';
 import { TopLevelCategory } from '../top-page.model';
 
 export class HhDataDto {
@@ -40,11 +48,11 @@ export class CreateTopPageDto {
 	@IsString()
 	title: string;
 
-	@IsString()
-	metaTitle: string;
+	// @IsString()
+	// metaTitle: string;
 
-	@IsString()
-	metaDescription: string;
+	// @IsString()
+	// metaDescription: string;
 
 	@IsString()
 	category: string;
